@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %} Acerca de Las Fotias {% endblock %}
+{% load static %}
+{% block content %}
+<div class="container mx-auto mb-4 md:px-4">
+    <h1 class="text-3xl font-bold text-center mb-4">Acerca de Las Fotias</h1>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-2">
+        <div class="hidden md:block md:col-span-1">
+            <img src="{% static "/img/lens.jpg" %}" class="object-cover h-full w-full" alt="Acerca de Las Fotias">
+        </div>
+        <div class="px-2 col-span-1 md:col-span-3">
+            <p class="">Somos una empresa innovadora, operando en Guatemala desde 2014, creciendo y mejorando constantemente, 
+                disfrutando de cada evento y creando momentos mágicos e inolvidables plasmados en fotografías de la mejor calidad. 
+                Un equipo de trabajo profesional, apasionado, dinámico, capacitado, con experiencia y en busca de brindar la mejor 
+                experiencia a todos y cada una de las personas.
+            </p>
+            <h2 class="text-2xl font-bold  my-4">Nuestros Servicios:</h2>
+            <h3 class="text-xl font-semibold mb-2">Fotografía</h3>
+            <p class="mb-2">Cobertura fotográfica digital ilimitada durante el tiempo del paquete elegido. Se puede considerar una pausa 
+                por traslado de ceremonia a recepción. Tomas desde diferentes ángulos en todos los momentos especiales, escenas 
+                importantes y con todos los invitados. Edición digital en las fotografías que lo requieran, para mejorar intensidad, 
+                saturación, claridad, contraste.</p>
+            <h3 class="text-xl font-semibold mb-2">Video</h3>
+            <p class="mb-2">Cobertura de video full HD durante el tiempo del paquete elegido. Se puede considerar una pausa por traslado 
+                de ceremonia a recepción. •Grabación desde diferentes ángulos, en todos los momentos especiales, escenas importantes 
+                en movimiento. Compilación de todas las escenas, recortes selectivos, animación de las transiciones, selección de temas 
+                musicales para alternar con audio original. Entrega en full HD para reproducción continua de resumen del evento.</p>
+            <h3 class="text-xl font-semibold mb-2">Cabina de Fotos</h3>
+            <p class="mb-2">Toma de fotografías e impresiones ilimitadas Accesorios divertidos variados (sombreros, bufandas, antifaces, 
+                lentes, etc.) Desde 3 hasta 7 fotos por impresión Encabezado personalizado (diseño incluido) Envío de todas las fotos digitales.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+                    

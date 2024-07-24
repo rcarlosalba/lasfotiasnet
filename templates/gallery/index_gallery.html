@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Categorías</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>Categorías</h1>
+    <div class="row">
+        {% for categoria in categorias %}
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="{{ categoria.imagen.url }}" alt="{{ categoria.titulo }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ categoria.titulo }}</h5>
+                    <p class="card-text">{{ categoria.descripcion }}</p>
+                    <a href="{% url 'categoria_detail' slug=categoria.slug %}" class="btn btn-primary">Ver Álbumes</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+</body>
+</html>
